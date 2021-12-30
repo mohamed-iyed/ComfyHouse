@@ -1,0 +1,9 @@
+@mixin flex($just, $align) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
+}
+@mixin reverse($bg, $color) {
+  background: $bg;
+  color: $color;
+}

@@ -1,0 +1,46 @@
+// || prodcuts container
+.products-container {
+  .product {
+    .product-img {
+      position: relative;
+      overflow: hidden;
+      img {
+        vertical-align: top;
+      }
+      .state {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        bottom: 2rem;
+        font-size: var(--normal-font);
+        background: var(--orange-clr);
+        display: block;
+        padding: var(--s-padding);
+        user-select: none;
+        cursor: pointer;
+        right: -100%;
+        transition: var(--transition);
+      }
+
+      &::before {
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: var(--transition);
+      }
+      &:hover {
+        .state {
+          right: 0;
+        }
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
