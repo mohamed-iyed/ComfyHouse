@@ -17,7 +17,7 @@ function calcTotelPrice() {
   const productsKeys = Object.keys(products);
   const totlePrice = document.querySelector(".total-price");
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", "../../products.json", true);
+  xhr.open("GET", "products.json", true);
   xhr.send();
   xhr.onload = function () {
     const productsArr = JSON.parse(xhr.responseText).items;
