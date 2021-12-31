@@ -1,17 +1,3 @@
-// functions
-/*
-add product
-inc count of products
-dec count of products
-clear products
-
-uses after change :
-change the state of the product
-show aside
-render products in aside
-show number of products next to the cart
-calc prices of products  
-*/
 // change Text of the product
 function changeText(id, updateFlag) {
   const productsContianer = document.querySelector(".products-container");

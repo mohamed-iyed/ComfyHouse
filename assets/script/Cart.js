@@ -28,7 +28,7 @@ Document.prototype.appendProductToCart = function (id) {
   if (cart) {
     const productsContainer = cart.querySelector(".cart-center");
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "../../products.json", true);
+    xhr.open("GET", "products.json", true);
     xhr.send();
     xhr.onload = function () {
       const resp = JSON.parse(xhr.responseText).items;
