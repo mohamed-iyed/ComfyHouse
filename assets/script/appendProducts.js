@@ -1,7 +1,7 @@
 const productsContainer = document.querySelector(".products-container");
 // get Products
 const xhr = new XMLHttpRequest();
-xhr.open("GET", "../../products.json", true);
+xhr.open("GET", "products.json", true);
 xhr.send();
 xhr.onload = function () {
   handleResponse(JSON.parse(xhr.responseText));
